@@ -1,16 +1,4 @@
-// 'Base' CSS
 
-@media (min-width: 320px) and (max-width: 999px) {
-
-  // Mobile and tablet CSS
-
-}
-
-@media (min-width: 1000px) {
-
-  // Laptop/desktop CSS
-
-}
 body {
     margin: 0;
     padding: 0;
@@ -263,4 +251,18 @@ body {
   .right {
     left: 0%;
   }
+}
+
+// 'Base' CSS
+
+@media (min-width: 320px) and (max-width: 999px) {
+
+  // Mobile and tablet CSS
+
+}
+
+@media (min-width: 1000px) {
+
+  // Laptop/desktop CSS
+
 }
