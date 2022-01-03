@@ -257,3 +257,10 @@ body {
   width: device-width ;
   zoom: 1.0 ;
 }
+
+@media screen and (max-width: 1020px) {
+  #container, #timeline, #header, #content, #footer {
+    float: none;
+    width: auto;
+  }
+}
