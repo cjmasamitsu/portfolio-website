@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>CM | Data Enthusiast</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+      <title>Casey Masamitsu</title>
+      <link rel="icon" href="/static/img/cmfavicon.png">
       <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>
-    <header>
-      <div class="container">
-        <h1 class="logo"><center>CASEY MASAMITSU</center></h1>
-        <strong>
-		<nav>
-		<center>
-          <ul class="nav">
-            <li><a href="{{ url_for('home') }}">About Me</a></li>
-            <li><a href="{{ url_for('projects') }}">Projects</a></li>
-			<li><a href="{{ url_for('contact') }}">Contact</a></li>
-			<li><a href="https://github.com/cjmasamitsu" target="_blank">GitHub</a></li>
-			<li><a href="https://medium.com/@cjmasamitsu" target="_blank">Blog</a></li>
-			<li><a href="https://www.linkedin.com/in/cjmasamitsu/" target="_blank">LinkedIn</a></li>
-          </ul>
-		  </center>
+
+ <body>
+        <nav class="navbar navbar-expand-md navbar-light {{ id }}-navbar-custom sticky-top">
+            <div class="container">
+                <a class="navbar-brand" id="name-color" href="{{ url_for('home') }}">CASEY MASAMITSU</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto mt-2">
+                        <li class="nav-item">
+                            <a class="nav-link" id="navbar-color" href="/projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="navbar-color" href="/contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="navbar-color" href="/resume">Resume</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto mt-2">
+                        <li class="nav-item">
+                            <a target="_blank" class="nav-link" id="navbar-color" href="https://github.com/cjmasamitsu">GitHub</a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank" class="nav-link" id="navbar-color" href="https://medium.com/@cjmasamitsu">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank" class="nav-link" id="navbar-color" href="https://www.linkedin.com/in/cjmasamitsu/">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-		</strong>
-      </div>
-    </header>
+
+        {% block section %}{% endblock %}
+
     <div class="container">
         {%block content%}
         {%endblock%}
 
-  </body>
+        <footer class="small text-center text-muted">
+            <a href="/legalnotice" class="text-dark">Legal Notice</a> |
+            <a href="/privacypolicy" class="text-dark">Privacy</a>
+            <p class="copyright">Copyright &copy; 2022 | Casey Masamitsu</p>
+        </footer>
+    </body>
+
 </html>
