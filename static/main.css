@@ -19,8 +19,6 @@ body {
     margin: auto;
   }
 
-
-
   div.projects {
     padding: 10px 30px 30px 30px;
     background-color: #ffffff;
@@ -46,8 +44,10 @@ body {
   h2 {
     font-size: 2.5em;
     margin-top: 30px;
-    text-align: center;
+    text-align: left;
     letter-spacing: -2px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   h3 {
@@ -214,7 +214,7 @@ body {
 
 .about-header
 {
-    color: #50d292;
+    color: #282830;
     font-weight: bold;
 }
 
@@ -382,38 +382,49 @@ img {
     width: auto;
     margin-left: auto;
     margin-right: auto;
-}
-
-.text-left2 {
     background-color: #ffffff;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
     padding-right: 20px;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
     border-radius: 5px;
 }
 
+
+
 .outerdiv {
     padding-top: 0px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .leftdiv
 {
-    padding: 0px 0px 20px 20px;
-    float: left;
-    width: 40%;
+    padding: 0px 0px 0px 0px;
+
 }
 
 .timeline {
     position: relative;
     max-width: 1000px;
     margin: 0 auto;
+    padding-top: 80px;
+}
+
+@media only screen and (min-width: 630px) {
+  /* only for screens wider or equal to 630 pixels */
+  /* code from https://www.thesitewizard.com/css/design-2-column-layout.shtml */
+  .timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
     float: right;
     width: 70%;
     padding-top: 80px;
+  }
+  .leftdiv {
+    padding: 0px 0px 20px 20px;
+    float: left;
+    width: 40%;
+  }
 }
