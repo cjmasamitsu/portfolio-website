@@ -59,7 +59,10 @@ body {
     color: #999;
   }
 
-
+.navbar {
+    overflow: hidden;
+    background-color: #282830;
+}
 
 .navbar-brand
 {
@@ -68,7 +71,6 @@ body {
     font-weight: bold;
     background-color: #282830;
 }
-
 
 #navbar-color, #name-color
 {
@@ -370,6 +372,7 @@ footer
 
 img {
   width: auto ;
+    display: block;
   max-width: 100% ;
   height: auto ;
   margin-left: auto;
@@ -409,7 +412,7 @@ img {
 }
 
 @media only screen and (min-width: 1500px) {
-  /* only for screens wider or equal to 630 pixels */
+  /* only for screens wider or equal to 1500 pixels */
   /* code from https://www.thesitewizard.com/css/design-2-column-layout.shtml */
   .timeline {
     position: relative;
