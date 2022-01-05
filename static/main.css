@@ -368,8 +368,6 @@ footer
     margin-bottom: 20px;
 }
 
-
-
 img {
   width: auto ;
   max-width: 100% ;
@@ -387,15 +385,14 @@ img {
     padding-left: 20px;
     padding-top: 0px;
     padding-bottom: 20px;
-    border-radius: 5px;
 }
 
 
 
 .outerdiv {
     padding-top: 0px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .leftdiv
@@ -411,7 +408,7 @@ img {
     padding-top: 80px;
 }
 
-@media only screen and (min-width: 630px) {
+@media only screen and (min-width: 1500px) {
   /* only for screens wider or equal to 630 pixels */
   /* code from https://www.thesitewizard.com/css/design-2-column-layout.shtml */
   .timeline {
@@ -423,8 +420,24 @@ img {
     padding-top: 80px;
   }
   .leftdiv {
-    padding: 0px 0px 20px 20px;
-    float: left;
-    width: 40%;
+      padding: 0px 0px 20px 20px;
+      float: left;
+      width: 40%;
   }
+    .outerdiv {
+        padding-top: 0px;
+        padding-right: 25px;
+        padding-left: 25px;
 }
+    .text-left1 {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+  }
