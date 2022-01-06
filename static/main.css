@@ -383,14 +383,14 @@ img {
     max-width: 750px;
     margin: 0 auto;
     float: right;
-    width: 70%;
+    width: 65%;
     padding-top: 80px;
   }
   .leftdiv {
       padding: 0px 0px 20px 20px;
       position: fixed;
       float: left;
-      width: 40%;
+      width: 35%;
   }
     .outerdiv {
         padding-top: 0px;
