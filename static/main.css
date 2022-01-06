@@ -105,9 +105,8 @@ body {
     outline: 1px solid red;
 }*/
 
-.home-content
-{
-    margin: 00px 0 10px 0;
+.home-content {
+    margin: 10px 0px 10px 0px;
 }
 
 @media (max-width: 576px) {
@@ -376,7 +375,7 @@ img {
 }
 
 @media only screen and (min-width: 1000px) {
-  /* only for screens wider or equal to 1500 pixels */
+  /* only for screens wider or equal to 1000 pixels */
   /* code from https://www.thesitewizard.com/css/design-2-column-layout.shtml */
   .timeline {
     position: relative;
@@ -385,12 +384,14 @@ img {
     float: right;
     width: 65%;
     padding-top: 80px;
+    display: block;
   }
   .leftdiv {
       padding: 0px 0px 20px 20px;
-      position: fixed;
+      position: relative;
       float: left;
       width: 35%;
+      display: block;
   }
     .outerdiv {
         padding-top: 0px;
@@ -415,6 +416,27 @@ img {
     background-color: #282830;
     }
 }
+
+@media only screen and (min-width: 1850px) {
+  /* only for screens wider or equal to 1800 pixels */
+  /* code from https://www.thesitewizard.com/css/design-2-column-layout.shtml */
+  .timeline {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    float: right;
+    width: 65%;
+    padding-top: 80px;
+    display: block;
+    margin-right: 200px;
+  }
+  .leftdiv {
+      padding: 0px 0px 20px 20px;
+      position: relative;
+      float: left;
+      width: 35%;
+      display: block;
+      margin-left: 200px;
 
 /* CONTACT FORM */
 input[type=text], select, textarea {
