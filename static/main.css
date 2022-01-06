@@ -388,7 +388,7 @@ img {
   }
   .leftdiv {
       padding: 0px 0px 20px 20px;
-      position: relative;
+      position: fixed;
       float: left;
       width: 35%;
       display: block;
@@ -417,26 +417,145 @@ img {
     }
 }
 
-@media only screen and (min-width: 1850px) {
-  /* only for screens wider or equal to 1800 pixels */
-  /* code from https://www.thesitewizard.com/css/design-2-column-layout.shtml */
-  .timeline {
-    position: relative;
-    max-width: 700px;
-    margin: 0 auto;
-    float: right;
-    width: 65%;
-    padding-top: 80px;
-    display: block;
-    margin-right: 200px;
-  }
-  .leftdiv {
-      padding: 0px 0px 20px 20px;
-      position: relative;
-      float: left;
-      width: 35%;
-      display: block;
-      margin-left: 200px;
+@media only screen and (min-width: 1300px) {
+    /* only for screens wider or equal to 1000 pixels */
+    /* code from https://www.thesitewizard.com/css/design-2-column-layout.shtml */
+    .timeline {
+        position: relative;
+        margin: 0 auto;
+        float: right;
+        width: 65%;
+        padding-top: 80px;
+        display: block;
+        margin-right: 25px;
+    }
+
+    .leftdiv {
+        padding: 0px 0px 20px 20px;
+        position: relative;
+        float: left;
+        width: 35%;
+        display: block;
+        margin-left: 25px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    /* only for screens wider or equal to 1400 pixels */
+    /* code from https://www.thesitewizard.com/css/design-2-column-layout.shtml */
+    .timeline {
+        position: relative;
+        margin: 0 auto;
+        float: right;
+        width: 65%;
+        padding-top: 80px;
+        display: block;
+        margin-right: 45px;
+    }
+
+    .leftdiv {
+        padding: 0px 0px 20px 20px;
+        position: relative;
+        float: left;
+        width: 35%;
+        display: block;
+        margin-left: 45px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    /* only for screens wider or equal to 1500 pixels */
+    /* code from https://www.thesitewizard.com/css/design-2-column-layout.shtml */
+    .timeline {
+        position: relative;
+        margin: 0 auto;
+        float: right;
+        width: 65%;
+        padding-top: 80px;
+        display: block;
+        margin-right: 65px;
+    }
+
+    .leftdiv {
+        padding: 0px 0px 20px 20px;
+        position: relative;
+        float: left;
+        width: 35%;
+        display: block;
+        margin-left: 65px;
+    }
+}
+
+
+@media only screen and (min-width: 1600px) {
+    /* only for screens wider or equal to 1800 pixels */
+    /* code from https://www.thesitewizard.com/css/design-2-column-layout.shtml */
+    .timeline {
+        position: relative;
+        margin: 0 auto;
+        float: right;
+        width: 60%;
+        padding-top: 80px;
+        display: block;
+        margin-right: 90px;
+
+    }
+
+    .leftdiv {
+        padding: 0px 0px 20px 20px;
+        position: relative;
+        float: left;
+        width: 40%;
+        display: block;
+        margin-left: 90px;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    /* only for screens wider or equal to 1500 pixels */
+    /* code from https://www.thesitewizard.com/css/design-2-column-layout.shtml */
+    .timeline {
+        position: relative;
+        margin: 0 auto;
+        float: right;
+        width: 65%;
+        padding-top: 80px;
+        display: block;
+        margin-right: 115px;
+    }
+
+    .leftdiv {
+        padding: 0px 0px 20px 20px;
+        position: relative;
+        float: left;
+        width: 35%;
+        display: block;
+        margin-left: 115px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    /* only for screens wider or equal to 1500 pixels */
+    /* code from https://www.thesitewizard.com/css/design-2-column-layout.shtml */
+    .timeline {
+        position: relative;
+        margin: 0 auto;
+        float: right;
+        width: 65%;
+        padding-top: 80px;
+        display: block;
+        margin-right: 135px;
+    }
+
+    .leftdiv {
+        padding: 0px 0px 20px 20px;
+        position: relative;
+        float: left;
+        width: 35%;
+        display: block;
+        margin-left: 135px;
+    }
+}
 
 /* CONTACT FORM */
 input[type=text], select, textarea {
