@@ -30,6 +30,13 @@ def blog():
 def linkedin():
     return render_template("linkedin.html")
 
+@app.route('/privacypolicy/')
+def privacypolicy():
+    return render_template("privacypolicy.html")
+
+@app.route('/resume/')
+def resume():
+    return render_template("resume.pdf")
 
 if __name__ == "__main__":
     app.run(debug=True)
