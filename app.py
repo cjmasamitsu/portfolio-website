@@ -36,7 +36,7 @@ def privacypolicy():
 
 @app.route('/resume/')
 def resume():
-    return render_template("resume.pdf")
+    return render_template("caseyandhastings.jpg")
 
 if __name__ == "__main__":
     app.run(debug=True)
