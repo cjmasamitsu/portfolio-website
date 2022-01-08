@@ -1,7 +1,42 @@
 {%extends "layout.html"%}
 {% block content %}
-<div class="projects">
+<div class="portfolio">
      <h1>Portfolio</h1>
-     <p>Coming soon!</p>
+<iframe height="800" width="100%" frameborder="no" src="http://cjmasamitsu.shinyapps.io/neubauer_final/"> </iframe>
 <div>
+    <!doctype html>
+<title>Example</title>
+<style>
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));;
+  grid-gap: 10px;
+  align-items: start;
+  justify-items: center;
+  margin: auto;
+  width: 540px;
+  }
+.grid img {
+  border: 1px solid rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+  max-width: 100%;
+}
+.grid img:nth-child(6) {
+  grid-column: span 5;
+  }
+</style>
+<main class="grid">
+  <img src="/static/img/4.png" alt="Sample photo">
+  <img src="/static/img/5.png" alt="Sample photo">
+  <img src="/static/img/6.png" alt="Sample photo">
+  <img src="/static/img/3.png" alt="Sample photo">
+  <img src="/static/img/port_pres_4.png" alt="Sample photo">
+  <img src="/static/img/1.png" alt="Sample photo">
+  <img src="/static/img/port_pres6.png" alt="Sample photo">
+  <img src="/static/img/12.png" alt="Sample photo">
+  <img src="/static/img/12.png" alt="Sample photo">
+  <img src="/static/img/7.png" alt="Sample photo">
+  <img src="/static/img/8.png" alt="Sample photo">
+  <img src="/static/img/9.png" alt="Sample photo">
+</main>
 {%endblock%}
