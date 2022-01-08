@@ -1,66 +1,73 @@
-{%extends "layout.html"%}
-{% block content %}
+{% extends "layout.html" %}
 
-<div class="home">
+{% block title %}
+    Index
+{% endblock %}
 
-  <h1>Hi! I'm Casey.</h1>
-  <p>I live in New York City with my partner and my dog. I like extracting actionable insights from data, listening to music, playing games, and traveling.
-<img src ="static\img\caseyandhastings.jpg" height = "375px" width = "475px" align = "right" hspace = "25" vspace = "25">
-      <br>
-      <br>
-      I will graduate from Johns Hopkins University in December 2022 with a MS in Data Analytics and Policy.
-      <br>
-      <br>
-      Scroll down to get to know me better and take a look around my portfolio to see what I have been up to while in in school.
-<br>
-<br>
+{% block section %}
 
-</div>
-<br>
-<br>
-<div class="timeline">
-  <div class="container left">
-    <div class="content">
-      <h2>Today</h2>
-<p>By day, I am a Technical Project Manager and licensed Financial Advisor at a FinTech company offering digital banking solutions to not-for-profit credit unions.</p>
-    </div>
-  </div>
-  <div class="container right">
-    <div class="content">
-      <h2>2020</h2>
+    <section class="home-content">
+        <div class="outerdiv">
+            <div class="leftdiv">
+                <div class="text-left">
+                    <h2 class="about-header">Nice to meet you, I'm Casey.</h2>
+                    <p>I live in New York City with my partner and my dog. I like extracting actionable insights from data, listening to music, playing games, and traveling.</p>
+                    <br>
+                    Scroll down to get to know me better and take a look around my portfolio to see what I have been up to while in in school.<br>
+                    <br>
+                    <img src ="static\img\caseyandhastings.jpg" height = "275px" width = "375px" align = "center">
+                </div>
+                <br>
+            </div>
+        <div class="timeline">
+            <div class="container-timeline left">
+                <div class="content">
+                        <h2>Currently, I am...</h2>
+                            <p>
+                                a Technical Project Manager and licensed Financial Advisor at a FinTech company offering digital banking solutions to not-for-profit credit unions.
+                            </p>
+                </div>
+            </div>
+            <div class="container-timeline right">
+                <div class="content">
+                        <h2>2020</h2>
       <p>place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text place holder text  </p>
-    </div>
-  </div>
-    <div class="container left">
-    <div class="content">
-      <h2>2017</h2>
+                </div>
+            </div>
+            <div class="container-timeline left">
+                <div class="content">
+                        <h2>2017</h2>
       <p>moved to new york city, started at access softek</p>
-    </div>
-  </div>
-    <div class="container right">
-    <div class="content">
-      <h2>2014</h2>
+                </div>
+            </div>
+            <div class="container-timeline right">
+                <div class="content">
+                        <h2>2014</h2>
       <p>moved to austin texas, became a banker</p>
-    </div>
-  </div>
-  <div class="container left">
-    <div class="content">
-      <h2>2013</h2>
+                </div>
+            </div>
+            <div class="container-timeline left">
+                <div class="content">
+                        <h2>2013</h2>
       <p>graduated from iowa state</p>
-    </div>
-  </div>
-    <div class="container right">
-    <div class="content">
-      <h2>2009</h2>
-      <p>should high school even be on here lolfasdfsdfdsfadsfadsfsdfsdafasdfasdfasdfadsfadsfasdfadsfadsf dsf sdfas fdsfdsf dsa f ads</p>
-    </div>
-  </div>
-    <div class="container left">
-    <div class="content">
-      <h2>1990</h2>
-      <p>born in ames iowa</p>
-    </div>
-  </div>
-</div>
-{%endblock%}
+                </div>
+            </div>
+            <div class="container-timeline right">
+                <div class="content">
+                    <h2>2009</h2>
+                    <p>in 2009, I graduated from high school</p>
+                </div>
+            </div>
+            <div class="container-timeline left">
+                <div class="content">
+                    <h2>1990</h2>
+                    <p>born in ames, ia</p>
+                </div>
+            </div>
+                </div>
+            <div style="clear: both;"></div>
+      </div>
 
+    </section>
+
+{% endblock %}
