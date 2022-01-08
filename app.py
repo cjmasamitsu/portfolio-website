@@ -38,5 +38,9 @@ def privacypolicy():
 def resume():
     return render_template("caseyandhastings.jpg")
 
+@app.route('/form-to-email.php/')
+def formtoemail():
+    return render_template("form-to-email.php")
+
 if __name__ == "__main__":
     app.run(debug=True)
