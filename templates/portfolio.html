@@ -1,42 +1,124 @@
 {%extends "layout.html"%}
 {% block content %}
-<div class="portfolio">
-     <h1>Portfolio</h1>
-<iframe height="800" width="100%" frameborder="no" src="http://cjmasamitsu.shinyapps.io/neubauer_final/"> </iframe>
-<div>
-    <!doctype html>
-<title>Example</title>
-<style>
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));;
-  grid-gap: 10px;
-  align-items: start;
-  justify-items: center;
-  margin: auto;
-  width: 540px;
-  }
-.grid img {
-  border: 1px solid rgba(0,0,0,0.3);
-  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
-  max-width: 100%;
-}
-.grid img:nth-child(6) {
-  grid-column: span 5;
-  }
-</style>
-<main class="grid">
-  <img src="/static/img/4.png" alt="Sample photo">
-  <img src="/static/img/5.png" alt="Sample photo">
-  <img src="/static/img/6.png" alt="Sample photo">
-  <img src="/static/img/3.png" alt="Sample photo">
-  <img src="/static/img/port_pres_4.png" alt="Sample photo">
-  <img src="/static/img/1.png" alt="Sample photo">
-  <img src="/static/img/port_pres6.png" alt="Sample photo">
-  <img src="/static/img/12.png" alt="Sample photo">
-  <img src="/static/img/12.png" alt="Sample photo">
-  <img src="/static/img/7.png" alt="Sample photo">
-  <img src="/static/img/8.png" alt="Sample photo">
-  <img src="/static/img/9.png" alt="Sample photo">
-</main>
+
+<div class="portfolio-header">
+<h2>Portfolio</h2>
+<p>Hi there! Welcome to my portfolio. Take a look around to see what I have been up to while in school.</p>
+</div>
+<!-- Portfolio Gallery Grid -->
+
+<!-- Row 1 -->
+<div class="row">
+  <div class="column">
+    <div class="port-content">
+      <p style ="font-size: 1.7em;
+    font-weight: 100;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #282830;"><b>The Unequal Consequences of COVID-19 <br>
+          <a href="https://cjmasamitsu.shinyapps.io/neubauer_final/?_ga=2.29622714.428708352.1641949332-489713351.1641680265" target="_blank">RShiny Dashboard</a></b></p>
+      <img src="/static/img/uneq_cons.png" alt="image1" style="width:100%" class="image">
+        <div class="middle">
+            <a href="https://github.com/cjmasamitsu?tab=repositories" target="_blank"><div class="text">Code (COMING SOON)</div></a>
+        </div>
+        <br>
+        <p>For this Data Visualization project, I created an RShiny dashboard demonstrating the unequal consequences of COVID-19. This was created using mostly ggplot, plotly, RShiny, and the tidyverse packages.</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="port-content">
+      <p style ="font-size: 1.7em;
+    font-weight: 100;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #282830;">Willingness to Participate in US Census by Party Affiliation<br>
+      <img src="/static/img/python_census.png" alt="image2" style="width:100%" class="image">
+        <div class="middle">
+            <a href="" target="_blank"><div class="text">Code (COMING SOON)</div></a>
+        </div>
+        <br>
+        <p>In this analysis I used Python to quantify the relationship between an individual's willingness to participate in the United States Census and their political party affiliation. To conduct the analysis, I used scikit-learn, matplotlib, Pandas, NumPy, and seaborn.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Row 2 TBD
+<div class="row">
+  <div class="column">
+    <div class="port-content">
+      <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="port-content">
+    <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+</div>-->
+
+<!-- Row 3 TBD
+<div class="row">
+  <div class="column">
+    <div class="port-content">
+      <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="port-content">
+    <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+</div>-->
+
+<!-- Row 4 TBD
+<div class="row">
+  <div class="column">
+    <div class="port-content">
+      <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="port-content">
+    <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+</div>-->
+
+<!-- Row 5 TBD
+<div class="row">
+  <div class="column">
+    <div class="port-content">
+      <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="port-content">
+    <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+</div>-->
+<!-- END GRID -->
+
+
+
+
 {%endblock%}

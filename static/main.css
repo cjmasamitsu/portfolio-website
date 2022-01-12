@@ -19,21 +19,6 @@ body {
     margin: auto;
   }
 
-  div.portfolio {
-    padding: 10px 30px 30px 30px;
-    background-color: #ffffff;
-    -webkit-border-radius: 6px;
-       -moz-border-radius: 6px;
-            border-radius: 6px;
-  }
-
-    div.contact {
-    padding: 10px 30px 30px 30px;
-    background-color: #ffffff;
-    -webkit-border-radius: 6px;
-       -moz-border-radius: 6px;
-            border-radius: 6px;
-  }
     h1 {
     font-size: 2.5em;
     margin-top: 30px;
@@ -56,7 +41,7 @@ body {
     margin-top: 30px;
     text-align: center;
     letter-spacing: -1px;
-    color: #999;
+    color: #282830;
   }
 
 .navbar {
@@ -121,10 +106,6 @@ body {
     {
         padding: 150px 0 80px;
     }
-    .portfolio-row
-    {
-        margin: 0px 10px 0px 10px;
-    }
     .button-row
     {
         margin-bottom: 40px;
@@ -162,18 +143,6 @@ body {
     .title-description
     {
         font-size: 18px;
-    }
-    .project-des
-    {
-        font-size: 16px;
-    }
-    .skills
-    {
-        font-size: 14px;
-    }
-    .portfolio-row
-    {
-        margin: 30px 30px 30px 30px;
     }
 }
 
@@ -559,7 +528,7 @@ img {
 
 .contact-container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   padding: 5px 10px 10px 10px;
 }
 
@@ -605,4 +574,94 @@ img {
 .fa-envelope {
   background: #50d292;
   color: white;
+}
+
+/* Portfolio Styling */
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 0px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+
+/* Create two equal columns that float next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+
+/* Content */
+.port-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* The styling for the buttons when hovering on the image */
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 1s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #50d292;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.portfolio-header {
+    background-color: #ffffff;
+    color: 282830;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
 }
