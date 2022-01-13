@@ -644,11 +644,11 @@ img {
   text-align: center;
 }
 
-.container:hover .image {
+.port-content:hover .image {
   opacity: 0.3;
 }
 
-.container:hover .middle {
+.port-content:hover .middle {
   opacity: 1;
 }
 
