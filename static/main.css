@@ -36,9 +36,9 @@ body {
   }
 
   h3 {
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-weight: 100;
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
     letter-spacing: -1px;
     color: #282830;
@@ -582,22 +582,27 @@ img {
   box-sizing: border-box;
 }
 
-.row {
-  margin: 0px -16px;
+
+    .row {
+        margin: 0px -16px;
+        display: flex;
+    }
+
+    /* Add padding BETWEEN each column */
+    .row,
+    .row > .column {
+        padding: 8px;
+        display: flex;
+    }
+
+@media only screen and (min-width: 600px) {
+    /* Create two equal columns that float next to each other */
+    .column {
+        float: left;
+        flex: 1;
+    }
 }
 
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-
-/* Create two equal columns that float next to each other */
-.column {
-  float: left;
-  width: 50%;
-}
 
 
 /* Content */
@@ -624,44 +629,69 @@ img {
 
 /* The styling for the buttons when hovering on the image */
 
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: 1s ease;
-  backface-visibility: hidden;
-}
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: 1s ease;
+        backface-visibility: hidden;
+    }
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .port-content:hover .image {
+        opacity: 0.3;
+    }
+
+    .port-content:hover .middle {
+        opacity: 1;
+    }
+
+    .text {
+        background-color: #50d292;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+
+    .portfolio-header {
+        background-color: #ffffff;
+        color: 282830;
+        border-radius: 5px;
+        padding: 10px 10px 10px 10px;
+    }
+
+
+    /* button attempts */
+.port-buttons {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #50d292;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 1px;
+}
+.buttons {
   text-align: center;
 }
-
-.port-content:hover .image {
-  opacity: 0.3;
+.show-large {
+  display: none;
 }
-
-.port-content:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: #50d292;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
-.portfolio-header {
-    background-color: #ffffff;
-    color: 282830;
-    border-radius: 5px;
-    padding: 10px 10px 10px 10px;
+@media only screen and (min-width: 600px) {
+  .show-large {
+    display: block;
+  }
+  .show-mobile {
+    display: none;
+  }
 }
