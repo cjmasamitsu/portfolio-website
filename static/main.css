@@ -530,7 +530,7 @@ img {
 .contact-container {
   border-radius: 5px;
   background-color: #ffffff;
-  padding: 5px 10px 10px 10px;
+  padding: 5px 20px 10px 20px;
 }
 
 @media only screen and (max-width: 600px) {
