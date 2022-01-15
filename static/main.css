@@ -639,6 +639,13 @@ img {
         .row {
         margin-right: -60px;
     }
+
+}
+
+@media screen and (max-width: 900px) {
+    .jhu img {
+        display: none;
+    }
 }
 
 /* The styling for the buttons when hovering on the image */
