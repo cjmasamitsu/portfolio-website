@@ -6,7 +6,6 @@
   <ol>
     <li><a href="#about-the-project">About the Project</a></li>
     <li><a href="#what-i-learned">What I Learned</a></li>
-    <li><a href="#how-to-use-my-website">How To Use My Website</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -33,10 +32,6 @@ Creating a website from scratch doesn't happen overnight. Styling languages like
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
-
-
-<!-- How To Use My Website -->
-## How To Use My Website
 
 <!-- ROADMAP -->
 ## Roadmap
