@@ -36,7 +36,6 @@ Creating a website from scratch doesn't happen overnight. Styling languages like
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Add Changelog
 - [ ] Add back to top links
 - [ ] Add SQL database to pull latest projects
 - [ ] Improve Contact page with fillable form and PHP
