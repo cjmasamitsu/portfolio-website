@@ -28,4 +28,3 @@ if __name__ == "__main__":
 
 
 # flask run
-# upgrade heroku to -24
