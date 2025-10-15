@@ -27,4 +27,5 @@ if __name__ == "__main__":
     app.run(debug=True)
 
 
-# flask runn
+# flask run
+# upgrade heroku to -24
