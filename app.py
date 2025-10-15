@@ -27,4 +27,4 @@ if __name__ == "__main__":
     app.run(debug=True)
 
 
-# flask run
+# reminder -- run {flask run} in terminal to test locally
